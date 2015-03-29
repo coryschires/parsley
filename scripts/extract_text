@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/parsley'
+
+Parsley.bulk_extract_text!
+
+puts
+puts "Text successfully extracted. Files saved at #{Parsley::EXTRACTED_TEXT_DIRECTORY}"
