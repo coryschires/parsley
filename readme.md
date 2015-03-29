@@ -1,11 +1,11 @@
 # Parsley
 
-### Installation
+## Installation
 
 1. Install required gems: `bundle install`
 2. Install [Docsplit dependencies](http://documentcloud.github.io/docsplit) (graphicsmagick, poppler, etc).
 
-### Usage
+## Usage
 Using Parsley is a two step process.
 
 #### Step 1: Extract text from PDF files
