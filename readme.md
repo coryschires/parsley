@@ -16,11 +16,11 @@ information, you need to extract the raw text.
 
 As the text is being extracted, `extract_text` will output progress:
 * `.` for each successful extraction
-* `s` for any files were skiped because they're already been extracted
+* `s` for any files were skiped because they've already been extracted
 * `F` for any failed extraction
 
-When completed, will also print out a list of failed files so that you can
-check them manually.
+When completed, `extract_text` will print out a list of failed files so that
+you can check them manually, if desired.
 
 _Note: PDFs don't need to be OCR'd ahead of time. But if they have been OCR'd
 it'll run faster since it can skip that step._
