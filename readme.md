@@ -11,7 +11,7 @@ information, you need to extract the raw text.
 
 #### Step 1: Extract text from PDF files
 
-1. Put your PDFs in `data/pdfs`. (Nested file structure not supported.)
+1. Put your PDFs in `data/pdfs`. (Nested file structure not yet supported.)
 2. From the root directory of this project, run `./scripts/extract_text`.
 
 As the text is being extracted, `extract_text` will output progress:
