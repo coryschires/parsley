@@ -16,7 +16,7 @@ information, you need to extract the raw text.
 
 As the text is being extracted, `extract_text` will output progress:
 * `.` for each successful extraction
-* `s` for any files were skiped because they've already been extracted
+* `s` for any files that were skipped because they've already been extracted
 * `F` for any failed extraction
 
 When completed, `extract_text` will print out a list of failed files so that
