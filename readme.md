@@ -1,5 +1,8 @@
 # Parsley
 
+Parsley is simple tool to parse and scan PDFs for given phrases (e.g. a date, a name, etc). Under the hood, Parsley uses [Docsplit](http://documentcloud.github.io/docsplit) to do the hard work of PDF text extraction.
+
+
 ## Installation
 
 1. Install required gems: `bundle install`
