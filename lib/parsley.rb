@@ -1,5 +1,6 @@
 require 'pry'
 require 'docsplit'
+require 'terminal-table'
 
 module Parsley
   EXTRACTED_TEXT_DIRECTORY = "data/extracted_text"
@@ -24,6 +25,20 @@ module Parsley
         print 'F'
       end
     end
+  end
+
+  def self.search(query)
+    filenames = Dir.chdir(EXTRACTED_TEXT_DIRECTORY) { Dir["*.txt"] }
+    results = []
+
+    filenames.select do |filename|
+      open("#{EXTRACTED_TEXT_DIRECTORY}/#{filename}") do |file|
+        matches = file.grep(/#{query}/i)
+        results.push(filename: filename, matches: matches.size) if matches.any?
+      end
+    end
+
+    results.sort_by { |r| r[:matches] }.reverse
   end
 
 end

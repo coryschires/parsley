@@ -29,5 +29,22 @@ _Note: PDFs don't need to be OCR'd ahead of time. But if they have been OCR'd
 it'll run faster since it can skip that step._
 
 #### Step 2: Search extracted text for relevant information
+Once you've extracted the raw text from your PDFs, you can search the documents
+by running the search script from the root of the project:
 
-TODO: No code for this yet!
+    ./scripts/search "Urgent Matters"
+    ./scripts/search "Jane Smith"
+
+_Note: The search term must be surrounded by quotes._
+
+This will print a table of results:
+
+    +---------------------------------+
+    | 3 Pertinent File(s) Found       |
+    +-----------------------+---------+
+    | Filename              | Matches |
+    +-----------------------+---------+
+    | jan-meeting-notes.txt | 9       |
+    | apr-meeting-notes.txt | 9       |
+    | dec-meeting-notes.txt | 9       |
+    +-----------------------+---------+

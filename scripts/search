@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/parsley'
+
+results = Parsley.search(ARGV.first)
+table = Terminal::Table.new(
+  title: "#{results.length} Pertinent File(s) Found",
+  headings: results.first.keys.map(&:to_s).map(&:capitalize),
+  rows: results.map(&:values)
+)
+
+puts
+puts table
+puts
