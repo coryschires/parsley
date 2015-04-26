@@ -37,7 +37,7 @@ by running the search script from the root of the project:
 
 _Note: The search term must be surrounded by quotes._
 
-This will print a table of results:
+This will print a table of results sorted by number of matches:
 
     +---------------------------------+
     | 3 Pertinent File(s) Found       |
@@ -45,6 +45,6 @@ This will print a table of results:
     | Filename              | Matches |
     +-----------------------+---------+
     | jan-meeting-notes.txt | 9       |
-    | apr-meeting-notes.txt | 9       |
-    | dec-meeting-notes.txt | 9       |
+    | apr-meeting-notes.txt | 4       |
+    | dec-meeting-notes.txt | 2       |
     +-----------------------+---------+
